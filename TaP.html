@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75">
+<title>DSA-Talenttool</title>
+<link rel="stylesheet" href="tap.css" />
+</head>
+<body>
+<script src="tapstern.js"></script>
+<script src="tap.js"></script>
+<script>
+	window.onload = function(){initialisierung()};
+</script>
+<fieldset>
+	<legend>Spielwerte</legend>
+	<table>
+		<tr>
+			<td><label for="e-eins">Erste Eigenschaft</label></td>
+			<td class="eingabefeld"><input type="number" id="e-eins" value="12" min="1" max="30" onchange="calculate()"></td>
+		</tr>
+		<tr>
+			<td><label for="e-zwei">Zweite Eigenschaft</label></td>
+			<td class="eingabefeld"><input type="number" id="e-zwei" value="12" min="1" max="30" onchange="calculate()"></td>
+		</tr>
+		<tr>
+			<td><label for="e-drei">Dritte Eigenschaft</label></td>
+			<td class="eingabefeld"><input type="number" id="e-drei" value="12" min="1" max="30" onchange="calculate()"></td>
+		</tr>
+		<tr>
+			<td><label for="taw">TaW/ZfW</label></td>
+			<td class="eingabefeld"><input type="number" id="taw" value="12" min="0" max="35" onchange="calculate()"></td>
+		</tr>
+		<tr>
+			<td><label for="mod">Erleichterung/Erschwernis</label></td>
+			<td class="eingabefeld"><input type="number" id="mod" value="0" onchange="calculate()"></td>
+		</tr>
+	</table>
+</fieldset>
+
+<h2 id="probe"></h2>
+<div id="ergebnisse">
+
+<div class="einzeln">
+	<table>
+		<tbody id="ergebnisse_einzeln">
+			<tr>
+				<th>TaP*</th>
+				<th>Wahrscheinlichkeit</th>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="summe">
+	<table>
+		<tbody id="ergebnisse_kumulativ">
+			<tr>
+				<th>TaP*</th>
+				<th>Wahrscheinlichkeit</th>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div>
+</body>
+</html>

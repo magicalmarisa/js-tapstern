@@ -1,0 +1,7 @@
+label { display: block; }
+#ergebnisse tr:nth-child(even) {background: #CCC;}
+fieldset {max-width: max-content;}
+table {border-spacing: 0;}
+#ergebnisse {display: flex;}
+.einzeln,.summe {margin-right: 2em;}
+.eingabefeld,.werte,.beschreibung {text-align: right;}
